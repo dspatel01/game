@@ -10,7 +10,7 @@
 
 <body>
 
-    <div style="padding: 20px 60px; background-color: black;"><a href="./index.html" style="text-decoration: none;font-size: 25px;color: white;">Home</a></div>
+    <div style="padding: 20px 60px; background-color: black;"><a href="./project.html" style="text-decoration: none;font-size: 25px;color: white;">Home</a></div>
 
     <div class="container">
         <div class="main-container">
@@ -26,8 +26,9 @@
                 <button class="button6" value="6">6</button>
                 <button class="button7" value="7">7</button>
                 <button class="button8" value="8">8</button>
-                <button class="button9" value="8">9</button>
+                <button class="button9" value="9">9</button>
                 <button class="button10" value="10">10</button>
+                <button class="reset">Reset</button>
             </div>
         </div>
     </div>
@@ -45,15 +46,18 @@
         var button8 = document.querySelector('.button8');
         var button9 = document.querySelector('.button9');
         var button10 = document.querySelector('.button10');
+        var reset = document.querySelector('.reset');
 
         button1.addEventListener('click',()=>{
             if(number === parseInt(button1.value)){
                 display.innerHTML="Winner" + "<br/>" + number + " : " + button1.value
                 display.style.background="green"
+                display.style.borderRadius="8px"
                 display.style.color="white"
             }else{
                 display.innerHTML="Try again" + "<br/>" + number + " : " + button1.value
                 display.style.background="red";
+                display.style.borderRadius="8px"
                 display.style.color="white"
             }     
         })
@@ -164,6 +168,10 @@
                 display.style.background="red";
                 display.style.color="white"
             }     
+        })
+
+        reset.addEventListener('click',()=>{
+            location.reload();
         })
     </script>
 </body>
