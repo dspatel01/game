@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculatorStyle.css">
+</head>
+
+<body>
+    <div style="padding: 20px 60px; background-color: black;"><a href="./index.html"
+            style="text-decoration: none;font-size: 25px;color: white;">Home</a></div>
+    <div class="cal-container">
+        <div class="main">
+            <form>
+                <div class="output">
+                    <input class="display" type="text">
+                </div>
+                <div class="btn-container">
+                    <div class="btn-input">
+                        <input type="button" class="button btn-equal" value="AC">
+                        
+                        <input type="button" class="button" value=".">
+                        <input type="button" class="button" value="/">
+                    </div>
+                    <div class="btn-input">
+                        <input type="button" class="button" value="7">
+                        <input type="button" class="button" value="8">
+                        <input type="button" class="button" value="9">
+                        <input type="button" class="button" value="*">
+                    </div>
+                    <div class="btn-input">
+                        <input type="button" class="button" value="6">
+                        <input type="button" class="button" value="5">
+                        <input type="button" class="button" value="4">
+                        <input type="button" class="button" value="-">
+                    </div>
+                    <div class="btn-input">
+                        <input type="button" class="button" value="3">
+                        <input type="button" class="button" value="2">
+                        <input type="button" class="button" value="1">
+                        <input type="button" class="button" value="+">
+                    </div>
+                    <div class="btn-input">
+                        <input type="button" class="button" value="0">
+                        <input type="button" class="button" value="00">
+                        <input type="button" class="button btn-equal" value="=">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let display = document.querySelector('.display');
+        let buttons = document.querySelectorAll('.button');
+
+        let output = "";
+
+        Array.from(buttons).forEach((button) => {
+            button.addEventListener('click', (e) => {
+                if (e.target.value == "=") {
+                    output = eval(output)
+                    display.value = output
+                } else if (e.target.value == "AC") {
+                    output = ""
+                    display.value = output
+                }else {output = output + e.target.value;
+                    
+                    display.value = output
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>

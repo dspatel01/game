@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="numberguess.css">
+</head>
+
+<body>
+
+    <div style="padding: 20px 60px; background-color: black;"><a href="./index.html" style="text-decoration: none;font-size: 25px;color: white;">Home</a></div>
+
+    <div class="container">
+        <div class="main-container">
+            <div class="output-box">
+                <h2 class="display"> Press Any Key </h2>
+            </div>
+            <div class="button-container">
+                <button class="button1" value="1">1</button>
+                <button class="button2" value="2">2</button>
+                <button class="button3" value="3">3</button>
+                <button class="button4" value="4">4</button>
+                <button class="button5" value="5">5</button>
+                <button class="button6" value="6">6</button>
+                <button class="button7" value="7">7</button>
+                <button class="button8" value="8">8</button>
+                <button class="button9" value="8">9</button>
+                <button class="button10" value="10">10</button>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var number = Math.floor(Math.random() * 10) + 1;
+        var display = document.querySelector('.display')
+        var button1 = document.querySelector('.button1');
+        var button2 = document.querySelector('.button2');
+        var button3 = document.querySelector('.button3');
+        var button4 = document.querySelector('.button4');
+        var button5 = document.querySelector('.button5');
+        var button6 = document.querySelector('.button6');
+        var button7 = document.querySelector('.button7');
+        var button8 = document.querySelector('.button8');
+        var button9 = document.querySelector('.button9');
+        var button10 = document.querySelector('.button10');
+
+        button1.addEventListener('click',()=>{
+            if(number === parseInt(button1.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button1.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button1.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+
+        button2.addEventListener('click',()=>{
+            if(number === parseInt(button2.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button2.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button2.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+
+        button3.addEventListener('click',()=>{
+            if(number === parseInt(button3.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button3.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button3.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+
+        button4.addEventListener('click',()=>{
+            if(number === parseInt(button4.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button4.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button4.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+
+         button5.addEventListener('click',()=>{
+            if(number === parseInt(button5.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button5.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button5.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+
+         button6.addEventListener('click',()=>{
+            if(number === parseInt(button6.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button6.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button6.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+
+        button7.addEventListener('click',()=>{
+            if(number === parseInt(button7.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button7.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button7.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+
+        button8.addEventListener('click',()=>{
+            if(number === parseInt(button8.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button8.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button8.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+
+        button9.addEventListener('click',()=>{
+            if(number === parseInt(button9.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button9.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button9.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+
+        button10.addEventListener('click',()=>{
+            if(number === parseInt(button10.value)){
+                display.innerHTML="Winner" + "<br/>" + number + " : " + button10.value
+                display.style.background="green"
+                display.style.color="white"
+            }else{
+                display.innerHTML="Try again" + "<br/>" + number + " : " + button10.value
+                display.style.background="red";
+                display.style.color="white"
+            }     
+        })
+    </script>
+</body>
+
+</html>

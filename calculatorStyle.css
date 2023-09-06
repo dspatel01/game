@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cal-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cal-container .main {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.664);
+    width: 340px;
+    height: 460px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 2px rgba(128, 128, 128, 0.836);
+}
+
+.cal-container .main .output {
+    width: 280px;
+    height: 60px;
+}
+
+.cal-container .main .output .display {
+    width: 280px;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: right;
+    padding-right: 10px;
+    color: gray;
+    box-shadow: inset 1px 1px 4px 1px rgba(0, 0, 0, 0.589);
+}
+.btn-container{
+    margin-top: 20px;
+}
+.btn-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+input[type="button"] {
+   
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: gray;
+    font-weight: 600px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.418),
+        -2px -2px 2px 0px rgba(173, 171, 171, 0.459);
+}
+
+.btn-input .btn-equal {
+    width: 130px;
+}
